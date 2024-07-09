@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Here For You</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* General styles */
+        body {
+            font-family: 'Inter', sans-serif;
+            font-weight: bold;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            overflow-x: hidden;
+        }
+
+        header {
+            background-color: #fff;
+            padding: 10px 20px; /* Reduced padding for a thinner height */
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border: 2px solid #000; /* Black outline */
+            border-radius: 50px; /* Rounded corners */
+            margin: 20px; /* Margin for spacing around the header */
+            position: relative;
+            z-index: 2;
+            transition: all 1s ease;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        nav ul li {
+            margin-right: 20px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            padding: 10px 15px;
+            border-radius: 25px; /* Rounded menu items */
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #f0f0f0;
+        }
+
+        .sign-in {
+            text-decoration: none;
+            color: #333;
+            border: 1px solid #333;
+            padding: 10px 15px;
+            border-radius: 25px; /* Rounded sign-in button */
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .sign-in:hover {
+            background-color: #333;
+            color: #fff;
+        }
+
+        .hero, .question-container {
+            text-align: center;
+            margin: 50px 0;
+            position: relative;
+            z-index: 1;
+            transition: all 1s ease;
+        }
+
+        .hero img {
+            height: 30vh; /* Logo height set to 30% of viewport height */
+            max-width: 100%;
+            transition: transform 1s ease;
+        }
+
+        .hero button {
+            display: block;
+            margin: 20px auto 0 auto; /* Center the button and add margin to the top */
+        }
+
+        button {
+            background-color: #6cc4c4;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            cursor: pointer;
+            border-radius: 25px; /* Rounded button */
+            transition: background-color 0.3s ease, transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        button:hover {
+            background-color: #5ab0b0;
+            transform: scale(1.05);
+        }
+
+        button::after {
+            content: "";
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 0;
+            height: 0;
+            background: rgba(255, 255, 255, 0.5);
+            border-radius: 50%;
+            transform: translate(-50%, -50%);
+            transition: width 0.4s ease, height 0.4s ease;
+        }
+
+        button:active::after {
+            width: 200px;
+            height: 200px;
+        }
+
+        .question-container {
+            display: none;
+            position: relative;
+        }
+
+        .question {
+            margin-bottom: 20px;
+            transition: transform 1s ease;
+            position: absolute;
+            width: 100%;
+            text-align: center;
+        }
+
+        .question label {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .question input {
+            padding: 10px;
+            font-size: 1em;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            background-color: #f0f0f0;
+            width: 80%;
+            max-width: 300px;
+            outline: none;
+            user-select: none; /* Disable text selection */
+        }
+
+        .question input:focus {
+            border-color: #6cc4c4;
+        }
+
+        /* Circular design elements */
+        .circle-border,
+        .circle-border-large {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            border: 2px solid #ddd;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden; /* Hide the part of the circles outside the view */
+            transform: translate(-50%, 50%); /* Position the center of the circle at the bottom left corner */
+        }
+
+        .circle-border {
+            width: 200px;
+            height: 200px;
+            animation: rotate 5s linear infinite;
+        }
+
+        .circle-border-large {
+            width: 300px;
+            height: 300px;
+            animation: rotate 7s linear infinite;
+        }
+
+        .circle.red,
+        .circle.blue,
+        .circle.yellow,
+        .circle.green,
+        .circle.orange {
+            position: absolute;
+            border-radius: 50%;
+        }
+
+        .circle.red {
+            width: 400px;
+            height: 400px;
+            background-color: #e57373;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .circle.blue {
+            width: 400px;
+            height: 400px;
+            background-color: #64b5f6;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .circle.yellow {
+            width: 400px;
+            height: 400px;
+            background-color: #ffd54f;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .circle.green {
+            width: 600px;
+            height: 600px;
+            background-color: #81c784;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .circle.orange {
+            width: 600px;
+            height: 600px;
+            background-color: #ffb74d;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: translate(-50%, 50%) rotate(0deg);
+            }
+            100% {
+                transform: translate(-50%, 50%) rotate(360deg);
+            }
+        }
+
+        /* Navigation arrows */
+        .navigation {
+            display: none;
+            position: fixed;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            display: flex;
+            justify-content: space-between;
+            width: 120px;
+        }
+
+        .navigation img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            transition: transform 0.3s ease;
+            border-radius: 50%;
+        }
+
+        .navigation img:hover {
+            transform: scale(1.05);
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo" class="logo" style="display: none; height: 40px;">
+        <nav>
+            <ul>
+                <li><a href="#">Find a Page</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="sign-in">Sign in</a>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="images/logo.png" alt="Logo" id="hero-logo" style="display: block; margin: 0 auto;">
+            <button onclick="startAnimation()">Start Your Circle Page</button>
+        </div>
+        <div class="question-container" id="question-container">
+            <div class="question" id="question1">
+                <label for="first-name">What's your first name?</label>
+                <input type="text" id="first-name" onkeypress="handleKeyPress(event)">
+            </div>
+            <div class="question hidden" id="question2">
+                <label for="last-name">What's your last name?</label>
+                <input type="text" id="last-name" onkeypress="handleKeyPress(event)">
+            </div>
+            <div class="question hidden" id="question3">
+                <label for="email">What's your email?</label>
+                <input type="email" id="email" onkeypress="handleKeyPress(event)">
+            </div>
+            <div class="question hidden" id="question4">
+                <label for="password">Create a password</label>
+                <input type="password" id="password" onkeypress="handleKeyPress(event)">
+            </div>
+        </div>
+    </main>
+    <div class="circle-border">
+        <div class="circle red"></div>
+        <div class="circle blue"></div>
+        <div class="circle yellow"></div>
+    </div>
+    <div class="circle-border-large">
+        <div class="circle green"></div>
+        <div class="circle orange"></div>
+    </div>
+
+    <div class="navigation" id="navigation">
+        <img src="images/back-btn.png" onclick="prevAnimation()" class="ripple">
+        <img src="images/front-btn.png" id="next-button" onclick="nextAnimation()" class="ripple">
+    </div>
+
+    <script>
+        let step = 0;
+        const data = {};
+
+        function startAnimation() {
+            if (step === 0) {
+                // Slide all elements out of the screen from the left
+                document.querySelector('.hero').style.transform = 'translateX(-100vw)';
+                document.querySelector('.circle-border').style.transform = 'translateX(-100vw)';
+                document.querySelector('.circle-border-large').style.transform = 'translateX(-100vw)';
+
+                // Move logo to the menu bar
+                setTimeout(() => {
+                    const logo = document.getElementById('hero-logo');
+                    const header = document.querySelector('header');
+                    const nav = document.querySelector('nav');
+                    const signIn = document.querySelector('.sign-in');
+
+                    // Animate logo onto the menu bar
+                    logo.style.transform = 'translateX(-50px) scale(0.3)';
+
+                    setTimeout(() => {
+                        logo.style.display = 'none';
+                        const headerLogo = document.querySelector('.logo');
+                        headerLogo.style.display = 'block';
+
+                        header.insertBefore(headerLogo, nav);
+
+                        // Adjust the header to accommodate the new logo position
+                        header.style.display = 'flex';
+                        header.style.justifyContent = 'start';
+
+                        // Move the sign-in button to the rightmost part of the menu bar
+                        nav.style.marginRight = 'auto';
+                        header.appendChild(signIn);
+
+                        // Show the navigation buttons
+                        document.getElementById('navigation').style.display = 'flex';
+
+                        // Show the first question
+                        document.getElementById('question-container').style.display = 'block';
+                    }, 500); // Timing should match the transition duration
+                }, 500); // Delay to match the sliding transition
+
+                step = 1;
+            }
+        }
+
+        function prevAnimation() {
+            if (step > 1) {
+                const currentQuestion = document.getElementById(`question${step}`);
+                const prevQuestion = document.getElementById(`question${step - 1}`);
+
+                currentQuestion.style.transform = 'translateX(100vw)';
+                prevQuestion.style.transform = 'translateX(-100vw)';
+                prevQuestion.classList.remove('hidden');
+
+                setTimeout(() => {
+                    currentQuestion.classList.add('hidden');
+                    currentQuestion.style.transform = 'translateX(0)';
+                    prevQuestion.style.transform = 'translateX(0)';
+                    step--;
+                }, 500); // Timing should match the transition duration
+            } else if (step === 1) {
+                // Reverse the logo animation
+                const headerLogo = document.querySelector('.logo');
+                headerLogo.style.display = 'none';
+                const heroLogo = document.getElementById('hero-logo');
+                heroLogo.style.display = 'block';
+                heroLogo.style.transform = 'translateX(0) scale(1)';
+
+                // Slide elements back into view
+                document.querySelector('.hero').style.transform = 'translateX(0)';
+                document.querySelector('.circle-border').style.transform = 'translate(-50%, 50%)';
+                document.querySelector('.circle-border-large').style.transform = 'translate(-50%, 50%)';
+
+                // Hide the navigation buttons and questions
+                document.getElementById('navigation').style.display = 'none';
+                document.getElementById('question-container').style.display = 'none';
+
+                step = 0;
+            }
+        }
+
+        function nextAnimation() {
+            if (step >= 1 && step < 4) {
+                const currentQuestion = document.getElementById(`question${step}`);
+                const nextQuestion = document.getElementById(`question${step + 1}`);
+
+                currentQuestion.style.transform = 'translateX(-100vw)';
+                nextQuestion.style.transform = 'translateX(100vw)';
+                nextQuestion.classList.remove('hidden');
+
+                setTimeout(() => {
+                    currentQuestion.classList.add('hidden');
+                    currentQuestion.style.transform = 'translateX(0)';
+                    nextQuestion.style.transform = 'translateX(0)';
+                    step++;
+                }, 500); // Timing should match the transition duration
+            } else if (step === 4) {
+                sendData();
+            }
+        }
+
+        function handleKeyPress(event) {
+            if (event.key === 'Enter') {
+                document.getElementById('next-button').click();
+            }
+        }
+
+        function sendData() {
+            const firstName = document.getElementById('first-name').value;
+            const lastName = document.getElementById('last-name').value;
+            const email = document.getElementById('email').value;
+            const password = document.getElementById('password').value;
+
+            data.firstName = firstName;
+            data.lastName = lastName;
+            data.email = email;
+            data.password = password;
+
+            localStorage.setItem('formData', JSON.stringify(data));
+            window.location.href = 'dashboard.html';
+        }
+    </script>
+</body>
+</html>
