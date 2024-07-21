@@ -15,7 +15,6 @@
             background-color: #fff;
             overflow-x: hidden;
         }
-
         header {
             background-color: #fff;
             padding: 10px 20px;
@@ -30,7 +29,6 @@
             transition: all 1s ease;
             font-weight: bold;
         }
-
         nav ul {
             list-style-type: none;
             margin: 0;
@@ -38,11 +36,9 @@
             display: flex;
             align-items: center;
         }
-
         nav ul li {
             margin-right: 20px;
         }
-
         nav ul li a {
             text-decoration: none;
             color: #333;
@@ -50,81 +46,134 @@
             border-radius: 25px;
             transition: background-color 0.3s ease;
         }
-
         nav ul li a:hover {
             background-color: #f0f0f0;
         }
-
         .container {
             display: flex;
             flex-wrap: wrap;
             padding: 20px;
         }
-
         .column {
             flex: 1;
             min-width: 300px;
             padding: 20px;
         }
-
         .card {
             background-color: white;
             border-radius: 8px;
             margin: 20px 0;
             padding: 20px;
-            border: 1px solid #ddd; /* Add a light border */
+            border: 1px solid #ddd;
         }
-
         .card-small {
             background-color: white;
             border-radius: 8px;
             padding: 20px;
-            border: 1px solid #ddd; /* Add a light border instead of shadow */
-            margin-bottom: 10px; /* Add space between small cards */
-            flex: 1; /* Allow small cards to grow equally */
-            min-width: calc(50% - 10px); /* Make each small card take half the width of the parent, minus the margin */
-            box-sizing: border-box; /* Include padding and border in the element's total width and height */
-            text-align: left; /* Left align text */
+            border: 1px solid #ddd;
+            margin-bottom: 10px;
+            flex: 1;
+            min-width: calc(50% - 10px);
+            box-sizing: border-box;
+            text-align: left;
         }
-
         .card-small p {
             margin: 0;
         }
-
         .card-small .small-text {
             font-size: 0.8em;
             color: #aaa;
         }
-
         .card-small .large-text {
             font-size: 2em;
             font-weight: bold;
         }
-
         .card-small-container {
             display: flex;
-            gap: 20px; /* Add space between the small cards */
+            gap: 20px;
         }
-
         h1 {
             margin: 0 0 20px;
             font-weight: bold;
         }
-
         h2 {
             margin-top: 0;
         }
-
         .subtitle {
             font-weight: normal;
             margin-top: -15px;
         }
-
+        .inner-circle-tabs-wrapper {
+            display: flex;
+            align-items: center;
+            overflow-x: auto;
+            margin-bottom: 10px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #ddd;
+        }
+        .inner-circle-tabs {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            flex-shrink: 0;
+        }
+        .inner-circle-tabs button {
+            flex: 1;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            white-space: nowrap;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .inner-circle-tabs button.active {
+            background-color: #ccc;
+        }
+        .plus-button {
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: black;
+            color: white;
+            border-radius: 10px;
+            font-size: 20px;
+            line-height: 1;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .arrow-button {
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: #f0f0f0;
+            color: black;
+            border-radius: 50%;
+            font-size: 20px;
+            line-height: 1;
+            width: 30px;
+            height: 30px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .inner-circle-container {
+            display: none;
+            max-height: 300px;
+            overflow-y: auto;
+        }
+        .inner-circle-container.active {
+            display: block;
+        }
         .inner-circle {
             list-style-type: none;
             padding: 0;
         }
-
         .inner-circle li {
             display: flex;
             align-items: center;
@@ -132,9 +181,8 @@
             padding: 10px 0;
             cursor: grab;
         }
-
         .inner-circle li .profile-pic {
-            width: 30px; /* Smaller size for profile picture */
+            width: 30px;
             height: 30px;
             background-color: #ccc;
             border-radius: 50%;
@@ -144,44 +192,32 @@
             font-weight: bold;
             margin-right: 10px;
         }
-
         .inner-circle li .remove-btn, .inner-circle li .pending-btn {
-            margin-left: auto; /* Right align the X and - */
+            margin-left: auto;
         }
-
         .task-list {
             list-style-type: none;
             padding: 0;
         }
-
         .task-list li {
             display: flex;
             justify-content: space-between;
             padding: 10px 0;
             cursor: grab;
         }
-
         .task-list li .status {
-            margin-left: auto; /* Right align the status */
+            margin-left: auto;
             cursor: default;
         }
-
         .task-list li .status.assigned {
             color: grey;
         }
-
         .task-list li .status.not-assigned {
             color: red;
         }
-
-        .calendar {
-            text-align: center;
-        }
-
         .unbold {
             font-weight: normal;
         }
-
         .sidebar {
             height: 100%;
             width: 0;
@@ -195,7 +231,6 @@
             transition: 0.5s;
             padding-top: 60px;
         }
-
         .sidebar a {
             padding: 10px 15px;
             text-decoration: none;
@@ -204,31 +239,26 @@
             display: block;
             transition: 0.3s;
         }
-
         .sidebar a:hover {
             color: #f1f1f1;
         }
-
         .sidebar .closebtn {
             position: absolute;
             top: 0;
             right: 25px;
             font-size: 36px;
         }
-
         .user-info {
             display: flex;
             align-items: center;
             gap: 10px;
         }
-
         .user-info img {
             border-radius: 50%;
-            width: 30px; /* Smaller size for profile picture */
+            width: 30px;
             height: 30px;
             cursor: pointer;
         }
-
         .add-btn {
             background-color: #6cc4c4;
             color: #fff;
@@ -237,21 +267,23 @@
             cursor: pointer;
             border-radius: 5px;
             margin-top: 10px;
+            display: block;
+            width: calc(100% - 20px);
+            margin-left: 10px;
         }
-
         .input-container {
             display: none;
             gap: 10px;
             margin-top: 10px;
+            width: calc(100% - 20px);
+            margin-left: 10px;
         }
-
         .input-container input {
             flex: 1;
             padding: 5px;
             border-radius: 5px;
             border: 1px solid #ddd;
         }
-
         .input-container button {
             background-color: #6cc4c4;
             color: #fff;
@@ -260,189 +292,126 @@
             cursor: pointer;
             border-radius: 5px;
         }
-
         .show {
             display: flex;
         }
-
-        /* Modal styles */
+        .story-box {
+            background-color: white;
+            border-radius: 8px;
+            margin: 20px 0;
+            padding: 20px;
+            border: 1px solid #ddd;
+        }
+        .edit-btn {
+            background-color: #ff9900;
+            color: #fff;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+            border-radius: 5px;
+            font-size: 0.8em;
+            float: right;
+        }
+        /* Calendar button styles */
+        .calendar-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            cursor: pointer;
+            z-index: 1000; /* Make sure it's above other content */
+        }
+        /* Modal box styles */
         .modal {
-            display: none; 
-            position: fixed; 
-            z-index: 4; 
-            padding-top: 100px; 
+            display: none; /* Hidden by default */
+            position: fixed;
+            z-index: 1001; /* Sit on top */
             left: 0;
             top: 0;
             width: 100%;
-            height: 100%; 
-            overflow: auto; 
-            background-color: rgb(0,0,0); 
-            background-color: rgba(0,0,0,0.4); 
+            height: 100%;
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
         }
-
+        /* Modal content styles */
         .modal-content {
             background-color: #fefefe;
-            margin: auto;
+            margin: 15% auto; /* 15% from the top and centered */
             padding: 20px;
             border: 1px solid #888;
-            width: 80%;
-            max-width: 600px;
-            max-height: 80%;
-            overflow-y: auto;
+            width: 40%; /* Reduced width */
+            max-width: 500px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
         }
-
+        /* Close button styles */
         .close {
             color: #aaa;
             float: right;
             font-size: 28px;
             font-weight: bold;
         }
-
         .close:hover,
         .close:focus {
             color: black;
             text-decoration: none;
             cursor: pointer;
         }
-
         /* Calendar styles */
-        .dycalendar-container {
-            display: inline-block;
-            border: 1px solid #eee;
+        .calendar {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            max-width: 350px; /* Less wide */
+            margin: 0 auto; /* Centered */
         }
-
-        .dycalendar-container.round-edge {
-            border-radius: 5%;
-        }
-
-        .dycalendar-day-container,
-        .dycalendar-month-container {
+        .calendar .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             padding: 10px;
+        }
+        .calendar .days {
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .calendar .day {
+            width: calc(100% / 7);
+            padding: 10px;
+            box-sizing: border-box;
             text-align: center;
-            font-family: Arial;
-            background: #fff;
-        }
-
-        .dycalendar-day-container div,
-        .dycalendar-month-container div {
-            padding: 0;
-            margin-bottom: 10px;
-        }
-
-        .dycalendar-span-day {
-            font-size: 110%;
-        }
-
-        .dycalendar-span-date {
-            font-size: 250%;
-        }
-
-        .dycalendar-span-month-year {
-            font-size: 90%;
-        }
-
-        .dycalendar-header {
-            position: relative;
-        }
-
-        .dycalendar-prev-next-btn {
-            position: absolute;
-            top: 0;
             cursor: pointer;
+            transition: border 0.3s;
         }
-
-        .dycalendar-prev-next-btn.prev-btn {
+        .calendar .day:hover {
+            border: 1px solid #ddd;
+            border-radius: 8px; /* Square-rounded highlight */
+        }
+        /* Date modal box */
+        .date-modal {
+            display: none;
+            position: fixed;
+            z-index: 1002;
             left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0,0,0,0.4);
         }
-
-        .dycalendar-prev-next-btn.next-btn {
-            right: 0;
+        .date-modal-content {
+            background-color: #fefefe;
+            margin: 20% auto;
+            padding: 20px;
+            border: 1px solid #888;
+            width: 40%; /* Reduced width */
+            max-width: 500px;
+            border-radius: 8px;
         }
-
-        .dycalendar-body table tr td {
-            padding: 5px;
-        }
-
-        .dycalendar-today-date,
-        .dycalendar-target-date {
-            background-color: #111;
-            color: #fff;
-            border-radius: 2px;
-        }
-
-        .dycalendar-container.gradient {
-            background: #fff;
-            background: linear-gradient(#fff, #d3d3d3);
-        }
-
-        .dycalendar-container.skin-black {
-            color: #fff;
-            background-color: #111;
-        }
-
-        .dycalendar-container.skin-blue {
-            color: #fff;
-            background-color: #3c99d3;
-        }
-
-        .dycalendar-container.skin-green {
-            color: #fff;
-            background-color: #2bb063;
-        }
-
-        .dycalendar-container.skin-purple {
-            color: #fff;
-            background-color: #975ea4;
-        }
-
-        .dycalendar-container.skin-red {
-            color: #fff;
-            background-color: #e94d40;
-        }
-
-        .dycalendar-container.skin-spacegray {
-            color: #fff;
-            background-color: #343d46;
-        }
-
-        .dycalendar-container.shadow-default {
-            box-shadow: 0 4px 4px 0 rgba(50, 50, 50, 0.4);
-        }
-
-        .dycalendar-container.shadow-black {
-            box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.4);
-        }
-
-        .dycalendar-container.shadow-blue {
-            box-shadow: 0 4px 4px 0 rgba(60, 153, 211, 0.4);
-        }
-
-        .dycalendar-container.shadow-green {
-            box-shadow: 0 4px 4px 0 rgba(43, 176, 99, 0.4);
-        }
-
-        .dycalendar-container.shadow-purple {
-            box-shadow: 0 4px 4px 0 rgba(151, 94, 164, 0.4);
-        }
-
-        .dycalendar-container.shadow-red {
-            box-shadow: 0 4px 4px 0 rgba(233, 77, 64, 0.4);
-        }
-
-        .dycalendar-container.shadow-spacegray {
-            box-shadow: 0 4px 4px 0 rgba(52, 61, 70, 1);
-        }
-
-        /* Sliding animation */
-        .slide-up {
-            transform: translateY(100%);
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .slide-up.show {
-            transform: translateY(0);
-        }
-
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Sortable/1.14.0/Sortable.min.css" integrity="sha512-Hik6lf3RR6BjkaP+y4Hsz+wXMz4OlrZhj/m0sEPl2C+P5YBoErqPyFaOH23r6zNyb3D+PtQTD2OCUWWsT1Rl1w==" crossorigin="anonymous" />
 </head>
@@ -451,7 +420,7 @@
         <img src="images/logo.png" alt="Logo" class="logo" style="display: none; height: 40px;">
         <nav>
             <ul>
-                <li><a href="#">Find a Page</a></li>
+                <li><a href="findapage.html">Find a Page</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="#">Resources</a></li>
                 <li><a href="#">Dashboard</a></li>
@@ -459,14 +428,14 @@
         </nav>
         <div class="user-info">
             <span id="user-name">Jane Doe</span>
-            <img src="images/pfp.png" alt="User Avatar" onclick="openNav()">
+            <img src="images/pfp.png" alt="User Avatar" onclick="toggleModal(true)">
         </div>
     </header>
     <div class="container">
         <div class="column">
             <h1 id="dashboard-title">Dashboard</h1>
             <div class="card" style="border: none;">
-                <h2 class="unbold" style="margin-top: 0;">Community Contributions</h2>
+                <h2 class="unbold" style="margin-top: 0;">Community Contributions <button class="expand-btn" onclick="toggleExpandModal(true)">Expand</button></h2>
                 <div class="card-small-container">
                     <div class="card-small">
                         <p class="small-text">Total Donations</p>
@@ -480,11 +449,7 @@
             </div>
             <div class="card">
                 <h2 class="unbold">Today's Tasks</h2>
-                <ul class="task-list" id="task-list">
-                    <li class="unbold" draggable="true">Drop groceries to front door <span class="status assigned">-</span></li>
-                    <li class="unbold" draggable="true">Pick up Jane's kids from school <span class="status assigned">-</span></li>
-                    <li class="unbold" draggable="true">Bring groceries to front door <span class="status not-assigned">x</span></li>
-                </ul>
+                <ul class="task-list" id="task-list"></ul>
                 <button class="add-btn" onclick="toggleInput('task-input-container')">Add Task</button>
                 <div id="task-input-container" class="input-container">
                     <input type="text" id="new-task-input" placeholder="New task">
@@ -494,53 +459,262 @@
         </div>
         <div class="column">
             <div class="card" style="margin-top: 46px;">
-                <h2 class="unbold" style="margin-top: 0;">Inner Circle Member</h2>
-                <ul class="inner-circle" id="inner-circle">
-                    <li class="unbold" draggable="true">
-                        <div class="profile-pic">J</div>
-                        <div>Jane Smith</div> <span class="remove-btn">x</span>
-                    </li>
-                    <li class="unbold" draggable="true">
-                        <div class="profile-pic">M</div>
-                        <div>Mark Johnson</div> <span class="remove-btn">x</span>
-                    </li>
-                    <li class="unbold" draggable="true">
-                        <div class="profile-pic">G</div>
-                        <div>Greg Grainger</div> <span class="pending-btn">-</span>
-                    </li>
-                </ul>
-                <button class="add-btn" onclick="toggleInput('member-input-container')">Add Member</button>
-                <div id="member-input-container" class="input-container">
-                    <input type="text" id="new-member-input" placeholder="New member">
-                    <button onclick="addMember()">Add</button>
+                <h2 class="unbold" style="margin-top: 0;">Members</h2>
+                <div class="inner-circle-tabs-wrapper">
+                    <button class="arrow-button" onclick="scrollTabs(-100)">&#9664;</button>
+                    <div class="inner-circle-tabs" id="tabs-container">
+                        <button class="active" onclick="switchTab('tab-1')">Inner Circle</button>
+                        <button onclick="switchTab('tab-2')">Outer Circle</button>
+                        <button onclick="switchTab('tab-3')">Public</button>
+                    </div>
+                    <button class="plus-button" onclick="addTab()">+</button>
+                    <button class="arrow-button" onclick="scrollTabs(100)">&#9654;</button>
+                </div>
+                <div class="inner-circle-container active" id="tab-1">
+                    <ul class="inner-circle" id="tab-1-list"></ul>
+                    <button class="add-btn" onclick="toggleInput('tab-1-input-container')">Add Member</button>
+                    <div id="tab-1-input-container" class="input-container">
+                        <input type="text" id="new-tab-1-member-input" placeholder="New member">
+                        <button onclick="addMember('tab-1-list', 'new-tab-1-member-input')">Add</button>
+                    </div>
+                </div>
+                <div class="inner-circle-container" id="tab-2">
+                    <ul class="inner-circle" id="tab-2-list"></ul>
+                    <button class="add-btn" onclick="toggleInput('tab-2-input-container')">Add Member</button>
+                    <div id="tab-2-input-container" class="input-container">
+                        <input type="text" id="new-tab-2-member-input" placeholder="New member">
+                        <button onclick="addMember('tab-2-list', 'new-tab-2-member-input')">Add</button>
+                    </div>
+                </div>
+                <div class="inner-circle-container" id="tab-3">
+                    <ul class="inner-circle" id="tab-3-list"></ul>
+                    <button class="add-btn" onclick="toggleInput('tab-3-input-container')">Add Member</button>
+                    <div id="tab-3-input-container" class="input-container">
+                        <input type="text" id="new-tab-3-member-input" placeholder="New member">
+                        <button onclick="addMember('tab-3-list', 'new-tab-3-member-input')">Add</button>
+                    </div>
                 </div>
             </div>
-            <div class="card calendar">
-                <h2 class="unbold">Today is:</h2>
-                <p class="unbold">June 16th</p>
-                <button onclick="toggleCalendar()">View Full Calendar</button>
+        </div>
+        
+        <!-- Story Box -->
+        <div class="column">
+            <div class="story-box">
+                <h2 class="unbold">Story Preview</h2>
+                <button class="edit-btn" onclick="window.location.href='story.html'">Edit</button>
+                <p>This is a preview of your story content. It might include summaries of events, key highlights, or any relevant updates that need to be shared with the community.</p>
             </div>
         </div>
     </div>
 
-    <!-- The Modal -->
-    <div id="myModal" class="modal">
-        <div class="modal-content">
-            <span class="close" onclick="closeModal()">&times;</span>
-            <div id="dycalendar" class="slide-up"></div>
+    <div id="modal" class="modal" onclick="toggleModal(false)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <div class="modal-sidebar">
+                <div class="modal-link" onclick="changeContent('Fundraising')">Fundraising</div>
+                <div class="modal-link" onclick="changeContent('Gift Registry')">Gift Registry</div>
+                <div class="modal-link" onclick="changeContent('Your Circles')">Your Circles</div>
+                <div class="modal-link" onclick="changeContent('Settings')">Settings</div>
+            </div>
+            <div class="modal-main" id="modal-main">
+                <p>Select an option from the left to see more details here.</p>
+            </div>
         </div>
     </div>
 
-    <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <a href="#">Fundraising</a>
-        <a href="#">Gift Registry</a>
-        <a href="#">Your Circles</a>
-        <a href="#">Settings</a>
+    <!-- Rename Tab Modal -->
+    <div id="renameTabModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeRenameTabModal()">&times;</span>
+            <h2>Rename or Delete Tab</h2>
+            <input type="text" id="rename-tab-input" placeholder="New tab name">
+            <button onclick="renameTab()">Save</button>
+            <button onclick="deleteTab()">Delete</button>
+        </div>
+    </div>
+    
+    <!-- Calendar Button -->
+    <button class="calendar-btn" onclick="openModal()">Open Calendar</button>
+
+    <!-- The Calendar Modal -->
+    <div id="calendarModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div class="calendar">
+                <div class="header">
+                    <button onclick="prevMonth()">&#9664;</button>
+                    <span id="monthYear"></span>
+                    <button onclick="nextMonth()">&#9654;</button>
+                </div>
+                <div class="days" id="days"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Date Modal Template -->
+    <div id="dateModalTemplate" class="date-modal">
+        <div class="date-modal-content">
+            <span class="close" onclick="closeDateModal()">&times;</span>
+            <h2 id="date-title">March 15</h2>
+            <ul class="task-list" id="date-task-list"></ul>
+            <div class="input-container show">
+                <input type="text" id="new-date-task-input" placeholder="New task">
+                <button type="button" onclick="addDateTask()">Add</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="expandModal" class="modal" onclick="toggleExpandModal(false)">
+        <div class="modal-content" onclick="event.stopPropagation()">
+            <span class="close" onclick="toggleExpandModal(false)">&times;</span>
+            <!-- Add content for the expand modal here -->
+        </div>
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/sortablejs@1.14.0/Sortable.min.js"></script>
     <script>
+        let tabCount = 3;
+        let activeTabId = 'tab-1';
+
+        document.addEventListener("DOMContentLoaded", () => {
+            loadTabsFromLocalStorage();
+            switchTab('tab-1');
+        });
+
+        function switchTab(tabId) {
+            activeTabId = tabId;
+            const containers = document.querySelectorAll('.inner-circle-container');
+            containers.forEach(container => container.classList.remove('active'));
+
+            const tabs = document.querySelectorAll('.inner-circle-tabs button');
+            tabs.forEach(tab => tab.classList.remove('active'));
+
+            document.getElementById(tabId).classList.add('active');
+            document.querySelector(`.inner-circle-tabs button[onclick="switchTab('${tabId}')"]`).classList.add('active');
+
+            document.querySelectorAll('.inner-circle').forEach(list => list.style.display = 'none');
+            document.querySelectorAll('.input-container').forEach(container => container.style.display = 'none');
+            document.getElementById(`${tabId}-list`).style.display = 'block';
+            document.getElementById(`${tabId}-input-container`).style.display = 'flex';
+            saveTabsToLocalStorage();
+        }
+
+        function addTab() {
+            tabCount++;
+            const tabId = `tab-${tabCount}`;
+            const tabButton = document.createElement('button');
+            tabButton.innerHTML = `Tab ${tabCount}`;
+            tabButton.setAttribute('onclick', `switchTab('${tabId}')`);
+            tabButton.ondblclick = () => openRenameTabModal(tabId);
+            document.getElementById('tabs-container').appendChild(tabButton);
+
+            const newTabContainer = document.createElement('div');
+            newTabContainer.id = tabId;
+            newTabContainer.classList.add('inner-circle-container');
+            newTabContainer.innerHTML = `
+                <ul class="inner-circle" id="${tabId}-list"></ul>
+                <button class="add-btn" onclick="toggleInput('${tabId}-input-container')">Add Member</button>
+                <div id="${tabId}-input-container" class="input-container">
+                    <input type="text" id="new-${tabId}-member-input" placeholder="New member">
+                    <button onclick="addMember('${tabId}-list', 'new-${tabId}-member-input')">Add</button>
+                </div>
+            `;
+            document.querySelector('.column .card').appendChild(newTabContainer);
+            switchTab(tabId);
+            saveTabsToLocalStorage();
+        }
+
+        function removeTab(tabId, event) {
+            event.stopPropagation();
+            document.getElementById(tabId).remove();
+            document.querySelector(`.inner-circle-tabs button[onclick="switchTab('${tabId}')"]`).remove();
+            if (tabId === activeTabId) {
+                switchTab(document.querySelector('.inner-circle-tabs button').getAttribute('onclick').match(/'(.*?)'/)[1]);
+            }
+            saveTabsToLocalStorage();
+        }
+
+        function addMember(listId, inputId) {
+            const name = document.getElementById(inputId).value;
+            if (name) {
+                const firstLetter = name.charAt(0).toUpperCase();
+                const listItem = document.createElement('li');
+                listItem.className = 'unbold';
+                listItem.draggable = true;
+                listItem.innerHTML = `<div class="profile-pic">${firstLetter}</div><div>${name}</div> <span class="remove-btn">x</span>`;
+                document.getElementById(listId).appendChild(listItem);
+                document.getElementById(inputId).value = '';
+                saveTabsToLocalStorage();
+            }
+        }
+
+        function saveTabsToLocalStorage() {
+            const tabs = [];
+            document.querySelectorAll('.inner-circle-tabs button').forEach((button, index) => {
+                tabs.push({
+                    id: `tab-${index + 1}`,
+                    name: button.textContent.trim(),
+                });
+            });
+            const tabData = { tabs, tabCount };
+            localStorage.setItem('tabData', JSON.stringify(tabData));
+
+            const members = {};
+            document.querySelectorAll('.inner-circle-container').forEach(container => {
+                const listId = container.querySelector('.inner-circle').id;
+                members[listId] = [];
+                container.querySelectorAll('.inner-circle li').forEach(li => {
+                    members[listId].push(li.querySelector('div:nth-child(2)').textContent);
+                });
+            });
+            localStorage.setItem('members', JSON.stringify(members));
+        }
+
+        function loadTabsFromLocalStorage() {
+            const tabData = JSON.parse(localStorage.getItem('tabData'));
+            if (tabData) {
+                tabCount = tabData.tabCount;
+                tabData.tabs.forEach(tab => {
+                    const tabButton = document.createElement('button');
+                    tabButton.innerHTML = `${tab.name}`;
+                    tabButton.setAttribute('onclick', `switchTab('${tab.id}')`);
+                    tabButton.ondblclick = () => openRenameTabModal(tab.id);
+                    document.getElementById('tabs-container').appendChild(tabButton);
+
+                    const newTabContainer = document.createElement('div');
+                    newTabContainer.id = tab.id;
+                    newTabContainer.classList.add('inner-circle-container');
+                    newTabContainer.innerHTML = `
+                        <ul class="inner-circle" id="${tab.id}-list"></ul>
+                        <button class="add-btn" onclick="toggleInput('${tab.id}-input-container')">Add Member</button>
+                        <div id="${tab.id}-input-container" class="input-container">
+                            <input type="text" id="new-${tab.id}-member-input" placeholder="New member">
+                            <button onclick="addMember('${tab.id}-list', 'new-${tab.id}-member-input')">Add</button>
+                        </div>
+                    `;
+                    document.querySelector('.column .card').appendChild(newTabContainer);
+                });
+            }
+
+            const members = JSON.parse(localStorage.getItem('members'));
+            if (members) {
+                Object.keys(members).forEach(listId => {
+                    members[listId].forEach(name => {
+                        const firstLetter = name.charAt(0).toUpperCase();
+                        const listItem = document.createElement('li');
+                        listItem.className = 'unbold';
+                        listItem.draggable = true;
+                        listItem.innerHTML = `<div class="profile-pic">${firstLetter}</div><div>${name}</div> <span class="remove-btn">x</span>`;
+                        document.getElementById(listId).appendChild(listItem);
+                    });
+                });
+            }
+        }
+
+        function scrollTabs(amount) {
+            const tabsContainer = document.querySelector('.inner-circle-tabs-wrapper');
+            tabsContainer.scrollLeft += amount;
+        }
+
         // Function to get data from localStorage
         function getDataFromLocalStorage() {
             const data = localStorage.getItem('formData');
@@ -567,12 +741,14 @@
         const data = getDataFromLocalStorage();
         displayUserData(data);
 
-        function openNav() {
-            document.getElementById("mySidebar").style.width = "250px";
+        function toggleModal(show) {
+            const modal = document.getElementById('modal');
+            modal.style.display = show ? 'flex' : 'none';
         }
 
-        function closeNav() {
-            document.getElementById("mySidebar").style.width = "0";
+        function changeContent(section) {
+            const modalMain = document.getElementById('modal-main');
+            modalMain.innerHTML = `<h2>${section}</h2><p>Details about ${section} will be displayed here.</p>`;
         }
 
         function toggleInput(containerId) {
@@ -584,12 +760,31 @@
             }
         }
 
-        // Drag and drop for Inner Circle Members
-        const innerCircle = document.getElementById('inner-circle');
-        new Sortable(innerCircle, {
-            animation: 150,
-            ghostClass: 'sortable-ghost'
-        });
+        // Rename Tab Modal functions
+        function openRenameTabModal(tabId) {
+            document.getElementById('rename-tab-input').value = document.querySelector(`.inner-circle-tabs button[onclick="switchTab('${tabId}')"]`).textContent.trim();
+            document.getElementById('renameTabModal').style.display = 'block';
+            document.getElementById('renameTabModal').dataset.tabId = tabId;
+        }
+
+        function closeRenameTabModal() {
+            document.getElementById('renameTabModal').style.display = 'none';
+        }
+
+        function renameTab() {
+            const tabId = document.getElementById('renameTabModal').dataset.tabId;
+            const newName = document.getElementById('rename-tab-input').value.trim();
+            const tabButton = document.querySelector(`.inner-circle-tabs button[onclick="switchTab('${tabId}')"]`);
+            tabButton.innerHTML = `${newName}`;
+            saveTabsToLocalStorage();
+            closeRenameTabModal();
+        }
+
+        function deleteTab() {
+            const tabId = document.getElementById('renameTabModal').dataset.tabId;
+            removeTab(tabId, new Event('click'));
+            closeRenameTabModal();
+        }
 
         // Drag and drop for Today's Tasks
         const taskList = document.getElementById('task-list');
@@ -598,625 +793,133 @@
             ghostClass: 'sortable-ghost'
         });
 
-        function addMember() {
-            const name = document.getElementById('new-member-input').value;
-            if (name) {
-                const firstLetter = name.charAt(0).toUpperCase();
-                const listItem = document.createElement('li');
-                listItem.className = 'unbold';
-                listItem.draggable = true;
-                listItem.innerHTML = `<div class="profile-pic">${firstLetter}</div><div>${name}</div> <span class="remove-btn">x</span>`;
-                document.getElementById('inner-circle').appendChild(listItem);
-                document.getElementById('new-member-input').value = '';
-            }
-        }
-
         function addTask() {
             const task = document.getElementById('new-task-input').value;
+            const today = new Date();
+            const dateString = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
             if (task) {
-                const listItem = document.createElement('li');
-                listItem.className = 'unbold';
-                listItem.draggable = true;
-                listItem.innerHTML = `${task} <span class="status assigned">-</span>`;
-                document.getElementById('task-list').appendChild(listItem);
+                let tasks = JSON.parse(localStorage.getItem(dateString)) || [];
+                tasks.push(task);
+                localStorage.setItem(dateString, JSON.stringify(tasks));
+                renderTasksForToday();
                 document.getElementById('new-task-input').value = '';
             }
         }
 
-        // Modal functions
-        function openModal() {
-            document.getElementById("myModal").style.display = "block";
-            dycalendar.draw({
-                target: "#dycalendar",
-                type: 'month',
-                dayformat: 'full',
-                monthformat: 'full',
-                highlighttargetdate: true,
-                prevnextbutton: 'show'
+        function addDateTask() {
+            const taskInput = document.querySelector('#new-date-task-input');
+            const task = taskInput.value;
+            const date = document.getElementById('date-title').dataset.date;
+            if (task && date) {
+                let tasks = JSON.parse(localStorage.getItem(date)) || [];
+                tasks.push(task);
+                localStorage.setItem(date, JSON.stringify(tasks));
+                renderTasksForDate(date);
+                taskInput.value = '';
+            }
+        }
+
+        function renderTasksForToday() {
+            const today = new Date();
+            const dateString = `${today.getFullYear()}-${today.getMonth() + 1}-${today.getDate()}`;
+            const taskList = document.getElementById('task-list');
+            taskList.innerHTML = '';
+            let tasks = JSON.parse(localStorage.getItem(dateString)) || [];
+            tasks.forEach(task => {
+                const listItem = document.createElement('li');
+                listItem.className = 'unbold';
+                listItem.draggable = true;
+                listItem.innerHTML = `${task} <span class="status assigned">-</span>`;
+                taskList.appendChild(listItem);
             });
         }
 
+        function renderTasksForDate(date) {
+            const taskList = document.getElementById(`date-task-list-${date}`);
+            taskList.innerHTML = '';
+            let tasks = JSON.parse(localStorage.getItem(date)) || [];
+            tasks.forEach(task => {
+                const listItem = document.createElement('li');
+                listItem.className = 'unbold';
+                listItem.draggable = true;
+                listItem.innerHTML = `${task} <span class="status assigned">-</span>`;
+                taskList.appendChild(listItem);
+            });
+        }
+
+        // Calendar modal functions
+        function openModal() {
+            document.getElementById('calendarModal').style.display = 'block';
+        }
+
         function closeModal() {
-            document.getElementById("myModal").style.display = "none";
+            document.getElementById('calendarModal').style.display = 'none';
         }
 
-        // Function to toggle calendar display
-        function toggleCalendar() {
-            const calendar = document.getElementById('dycalendar');
-            calendar.classList.toggle('show');
-            if (calendar.classList.contains('show')) {
-                openModal();
-            } else {
-                closeModal();
-            }
-        }
-    </script>
-
-    <script>
-    /*! dyCalendarJS | (c) 2016 Yusuf Shakeel | https://github.com/yusufshakeel/dyCalendarJS */
-    (function (global) {
-
-        "use strict";
-
-        var
-            //this will be used by the user.
-            dycalendar = {},
-
-            //window document
-            document = global.document,
-
-            //starting year
-            START_YEAR = 1900,
-
-            //end year
-            END_YEAR = 9999,
-
-            //name of the months
-            monthName = {
-                full: ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'],
-                mmm: ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']
-            },
-
-            //name of the days
-            dayName = {
-                full: ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'],
-                d: ['S', 'M', 'T', 'W', 'T', 'F', 'S'],
-                dd: ['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa'],
-                ddd: ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']
-            };
-
-        /**
-         * this function will create month table.
-         *
-         * @param object data   this contains the calendar data
-         * @param object option this is the settings object
-         * @return html
-         */
-        function createMonthTable(data, option) {
-
-            var
-                table, tr, td,
-                r, c, count;
-
-            table = document.createElement("table");
-            tr = document.createElement("tr");
-
-            //create 1st row for the day letters
-            for (c = 0; c <= 6; c = c + 1) {
-                td = document.createElement("td");
-                td.innerHTML = "SMTWTFS"[c];
-                tr.appendChild(td);
-            }
-            table.appendChild(tr);
-
-            //create 2nd row for dates
-            tr = document.createElement("tr");
-
-            //blank td
-            for (c = 0; c <= 6; c = c + 1) {
-                if (c === data.firstDayIndex) {
-                    break;
-                }
-                td = document.createElement("td");
-                tr.appendChild(td);
-            }
-
-            //remaing td of dates for the 2nd row
-            count = 1;
-            while (c <= 6) {
-                td = document.createElement("td");
-                td.innerHTML = count;
-                if (data.today.date === count && data.today.monthIndex === data.monthIndex && option.highlighttoday === true) {
-                    td.setAttribute("class", "dycalendar-today-date");
-                }
-                if (option.date === count && option.month === data.monthIndex && option.highlighttargetdate === true) {
-                    td.setAttribute("class", "dycalendar-target-date");
-                }
-                tr.appendChild(td);
-                count = count + 1;
-                c = c + 1;
-            }
-            table.appendChild(tr);
-
-            //create remaining rows
-            for (r = 3; r <= 7; r = r + 1) {
-                tr = document.createElement("tr");
-                for (c = 0; c <= 6; c = c + 1) {
-                    if (count > data.totaldays) {
-                        table.appendChild(tr);
-                        return table;
-                    }
-                    td = document.createElement('td');
-                    td.innerHTML = count;
-                    if (data.today.date === count && data.today.monthIndex === data.monthIndex && option.highlighttoday === true) {
-                        td.setAttribute("class", "dycalendar-today-date");
-                    }
-                    if (option.date === count && option.month === data.monthIndex && option.highlighttargetdate === true) {
-                        td.setAttribute("class", "dycalendar-target-date");
-                    }
-                    count = count + 1;
-                    tr.appendChild(td);
-                }
-                table.appendChild(tr);
-            }
-
-            return table;
-        }
-
-        /**
-         * this function will draw Calendar Month Table
-         *
-         * @param object data   this contains the calendar data
-         * @param object option this is the settings object
-         * @return html
-         */
-        function drawCalendarMonthTable(data, option) {
-
-            var
-                table,
-                div, container, elem;
-
-            //get table
-            table = createMonthTable(data, option);
-
-            //calendar container
-            container = document.createElement("div");
-            container.setAttribute("class", "dycalendar-month-container");
-
-            //-------------------------- Header ------------------
-
-            //header div
-            div = document.createElement("div");
-            div.setAttribute("class", "dycalendar-header");
-            div.setAttribute("data-option", JSON.stringify(option));
-
-            //prev button
-            if (option.prevnextbutton === "show") {
-                elem = document.createElement("span");
-                elem.setAttribute("class", "dycalendar-prev-next-btn prev-btn");
-                elem.setAttribute("data-date", option.date);
-                elem.setAttribute("data-month", option.month);
-                elem.setAttribute("data-year", option.year);
-                elem.setAttribute("data-btn", "prev");
-                elem.innerHTML = "&lt;";
-                //add prev button span to header div
-                div.appendChild(elem);
-            }
-
-            //month span
-            elem = document.createElement("span");
-            elem.setAttribute("class", "dycalendar-span-month-year");
-            if (option.monthformat === "mmm") {
-                elem.innerHTML = data.monthName + " " + data.year;
-            } else if (option.monthformat === "full") {
-                elem.innerHTML = data.monthNameFull + " " + data.year;
-            }
-
-            //add month span to header div
-            div.appendChild(elem);
-
-            //next button
-            if (option.prevnextbutton === "show") {
-                elem = document.createElement("span");
-                elem.setAttribute("class", "dycalendar-prev-next-btn next-btn");
-                elem.setAttribute("data-date", option.date);
-                elem.setAttribute("data-month", option.month);
-                elem.setAttribute("data-year", option.year);
-                elem.setAttribute("data-btn", "next");
-                elem.innerHTML = "&gt;";
-                //add prev button span to header div
-                div.appendChild(elem);
-            }
-
-            //add header div to container
-            container.appendChild(div);
-
-            //-------------------------- Body ------------------
-
-            //body div
-            div = document.createElement("div");
-            div.setAttribute("class", "dycalendar-body");
-            div.appendChild(table);
-
-            //add body div to container div
-            container.appendChild(div);
-
-            //return container
-            return container;
-        }
-
-        /**
-         * this function will draw Calendar Day
-         *
-         * @param object data   this contains the calendar data
-         * @param object option this is the settings object
-         * @return html
-         */
-        function drawCalendarDay(data, option) {
-
-            var
-                div, container, elem;
-
-            //calendar container
-            container = document.createElement("div");
-            container.setAttribute("class", "dycalendar-day-container");
-
-            //-------------------------- Header ------------------
-
-            //header div
-            div = document.createElement("div");
-            div.setAttribute("class", "dycalendar-header");
-
-            //day span
-            elem = document.createElement("span");
-            elem.setAttribute("class", "dycalendar-span-day");
-            if (option.dayformat === "ddd") {
-                elem.innerHTML = dayName.ddd[data.targetedDayIndex];
-            } else if (option.dayformat === "full") {
-                elem.innerHTML = dayName.full[data.targetedDayIndex];
-            }
-
-            //add day span to footer div
-            div.appendChild(elem);
-
-            //add header div to container
-            container.appendChild(div);
-
-            //-------------------------- Body ------------------
-
-            //body div
-            div = document.createElement("div");
-            div.setAttribute("class", "dycalendar-body");
-
-            //date span
-            elem = document.createElement("span");
-            elem.setAttribute("class", "dycalendar-span-date");
-            elem.innerHTML = data.date;
-
-            //add date span to body div
-            div.appendChild(elem);
-
-            //add body div to container
-            container.appendChild(div);
-
-            //-------------------------- Footer ------------------
-
-            //footer div
-            div = document.createElement("div");
-            div.setAttribute("class", "dycalendar-footer");
-
-            //month span
-            elem = document.createElement("span");
-            elem.setAttribute("class", "dycalendar-span-month-year");
-            if (option.monthformat === "mmm") {
-                elem.innerHTML = data.monthName + " " + data.year;
-            } else if (option.monthformat === "full") {
-                elem.innerHTML = data.monthNameFull + " " + data.year;
-            }
-
-            //add month span to footer div
-            div.appendChild(elem);
-
-            //add footer div to container
-            container.appendChild(div);
-
-            //return container
-            return container;
-        }
-
-        /**
-         * this function will extend source object with defaults object.
-         *
-         * @param object source     this is the source object
-         * @param object defaults   this is the default object
-         * @return object
-         */
-        function extendSource(source, defaults) {
-            var property;
-            for (property in defaults) {
-                if (source.hasOwnProperty(property) === false) {
-                    source[property] = defaults[property];
-                }
-            }
-            return source;
-        }
-
-        /**
-         * This function will return calendar detail.
-         *
-         * @param integer year        1900-9999 (optional) if not set will consider
-         *                          the current year.
-         * @param integer month        0-11 (optional) 0 = Jan, 1 = Feb, ... 11 = Dec,
-         *                          if not set will consider the current month.
-         * @param integer date      1-31 (optional)
-         * @return boolean|object    if error return false, else calendar detail
-         */
-        function getCalendar(year, month, date) {
-
-            var
-                dateObj = new Date(),
-                dateString,
-                result = {},
-                idx;
-
-            if (year < START_YEAR || year > END_YEAR) {
-                global.console.error("Invalid Year");
-                return false;
-            }
-            if (month > 11 || month < 0) {
-                global.console.error("Invalid Month");
-                return false;
-            }
-            if (date > 31 || date < 1) {
-                global.console.error("Invalid Date");
-                return false;
-            }
-
-            result.year = year;
-            result.month = month;
-            result.date = date;
-
-            //today
-            result.today = {};
-            dateString = dateObj.toString().split(" ");
-
-            idx = dayName.ddd.indexOf(dateString[0]);
-            result.today.dayIndex = idx;
-            result.today.dayName = dateString[0];
-            result.today.dayFullName = dayName.full[idx];
-
-            idx = monthName.mmm.indexOf(dateString[1]);
-            result.today.monthIndex = idx;
-            result.today.monthName = dateString[1];
-            result.today.monthNameFull = monthName.full[idx];
-
-            result.today.date = dateObj.getDate();
-
-            result.today.year = dateString[3];
-
-            //get month-year first day
-            dateObj.setDate(1);
-            dateObj.setMonth(month);
-            dateObj.setFullYear(year);
-            dateString = dateObj.toString().split(" ");
-
-            idx = dayName.ddd.indexOf(dateString[0]);
-            result.firstDayIndex = idx;
-            result.firstDayName = dateString[0];
-            result.firstDayFullName = dayName.full[idx];
-
-            idx = monthName.mmm.indexOf(dateString[1]);
-            result.monthIndex = idx;
-            result.monthName = dateString[1];
-            result.monthNameFull = monthName.full[idx];
-
-            //get total days for the month-year
-            dateObj.setFullYear(year);
-            dateObj.setMonth(month + 1);
-            dateObj.setDate(0);
-            result.totaldays = dateObj.getDate();
-
-            //get month-year targeted date
-            dateObj.setFullYear(year);
-            dateObj.setMonth(month);
-            dateObj.setDate(date);
-            dateString = dateObj.toString().split(" ");
-
-            idx = dayName.ddd.indexOf(dateString[0]);
-            result.targetedDayIndex = idx;
-            result.targetedDayName = dateString[0];
-            result.targetedDayFullName = dayName.full[idx];
-
-            return result;
-
-        }
-
-        /**
-         * this function will handle the on click event.
-         */
-        function onClick() {
-
-            document.body.onclick = function (e) {
-
-                //get event object (window.event for IE compatibility)
-                e = global.event || e;
-
-                var
-                    //get target dom object reference
-                    targetDomObject = e.target || e.srcElement,
-
-                    //other variables
-                    date, month, year, btn, option, dateObj;
-
-                //prev-next button click
-                //extra checks to make sure object exists and contains the class of interest
-                if ((targetDomObject) && (targetDomObject.classList) && (targetDomObject.classList.contains("dycalendar-prev-next-btn"))) {
-                    date = parseInt(targetDomObject.getAttribute("data-date"));
-                    month = parseInt(targetDomObject.getAttribute("data-month"));
-                    year = parseInt(targetDomObject.getAttribute("data-year"));
-                    btn = targetDomObject.getAttribute("data-btn");
-                    option = JSON.parse(targetDomObject.parentElement.getAttribute("data-option"));
-
-                    if (btn === "prev") {
-                        month = month - 1;
-                        if (month < 0) {
-                            year = year - 1;
-                            month = 11;
-                        }
-                    }
-                    else if (btn === "next") {
-                        month = month + 1;
-                        if (month > 11) {
-                            year = year + 1;
-                            month = 0;
-                        }
-                    }
-
-                    option.date = date;
-                    option.month = month;
-                    option.year = year;
-
-                    drawCalendar(option);
-                }
-
-                //month click
-                //extra checks to make sure object exists and contains the class of interest
-                if ((targetDomObject) && (targetDomObject.classList) && (targetDomObject.classList.contains("dycalendar-span-month-year"))) {
-                    option = JSON.parse(targetDomObject.parentElement.getAttribute("data-option"));
-                    dateObj = new Date();
-
-                    option.date = dateObj.getDate();
-                    option.month = dateObj.getMonth();
-                    option.year = dateObj.getFullYear();
-
-                    drawCalendar(option);
-                }
-            };
-        }
-
-        //------------------------------ dycalendar.draw() ----------------------
-
-        /**
-         * this function will draw the calendar based on user preferences.
-         *
-         * option = {
-         *  target : "#id|.class"   //(mandatory) for id use #id | for class use .class
-         *  type : "calendar-type"  //(optional) values: "day|month" (default "day")
-         *  month : "integer"       //(optional) value 0-11, where 0 = January, ... 11 = December (default current month)
-         *  year : "integer"        //(optional) example 1990. (default current year)
-         *  date : "integer"        //(optional) example 1-31. (default current date)
-         *  monthformat : "full"    //(optional) values: "mmm|full" (default "full")
-         *  dayformat : "full"      //(optional) values: "ddd|full" (default "full")
-         *  highlighttoday : boolean    //(optional) (default false) if true will highlight today's date
-         *  highlighttargetdate : boolean   //(optional) (default false) if true will highlight targeted date of the month year
-         *  prevnextbutton : "hide"         //(optional) (default "hide") (values: "show|hide") if set to "show" it will show the nav button (prev|next)
-         * }
-         *
-         * @param object option     user preferences
-         * @return boolean          true if success, false otherwise
-         */
-        dycalendar.draw = function (option) {
-
-            //check if option is passed or not
-            if (typeof option === "undefined") {
-                global.console.error("Option missing");
-                return false;
-            }
-
-            var
-                self = this,    //pointing at dycalendar object
-
-                dateObj = new Date(),
-
-                //default settings
-                defaults = {
-                    type: "day",
-                    month: dateObj.getMonth(),
-                    year: dateObj.getFullYear(),
-                    date: dateObj.getDate(),
-                    monthformat: "full",
-                    dayformat: "full",
-                    highlighttoday: false,
-                    highlighttargetdate: false,
-                    prevnextbutton: "hide"
-                };
-
-            //extend user options with predefined options
-            option = extendSource(option, defaults);
-
-            drawCalendar(option);
-
-        };
-
-        //------------------------------ dycalendar.draw() ends here ------------
-
-        /**
-         * this function will draw the calendar inside the target container.
-         */
-        function drawCalendar(option) {
-
-            var
-                //variables for creating calendar
-                calendar,
-                calendarHTML,
-                targetedElementBy = "id",
-                targetElem,
-
-                //other variables
-                i, len, elemArr;
-
-            //find target element by
-            if (option.target[0] === "#") {
-                targetedElementBy = "id";
-            } else if (option.target[0] === ".") {
-                targetedElementBy = "class";
-            }
-            targetElem = option.target.substring(1);
-
-            //get calendar HTML
-            switch (option.type) {
-                case "day":
-                    //get calendar detail
-                    calendar = getCalendar(option.year, option.month, option.date);
-                    //get calendar html
-                    calendarHTML = drawCalendarDay(calendar, option);
-                    break;
-
-                case "month":
-                    //get calendar detail
-                    calendar = getCalendar(option.year, option.month, option.date);
-                    //get calendar html
-                    calendarHTML = drawCalendarMonthTable(calendar, option);
-                    break;
-
-                default:
-                    global.console.error("Invalid type");
-                    return false;
-            }
-
-            //draw calendar
-            if (targetedElementBy === "id") {
-
-                document.getElementById(targetElem).innerHTML = calendarHTML.outerHTML;
-
-            } else if (targetedElementBy === "class") {
-
-                elemArr = document.getElementsByClassName(targetElem);
-                for (i = 0, len = elemArr.length; i < len; i = i + 1) {
-                    elemArr[i].innerHTML = calendarHTML.outerHTML;
-                }
-
+        function closeDateModal() {
+            const dateModals = document.getElementsByClassName('date-modal');
+            for (const modal of dateModals) {
+                modal.style.display = 'none';
             }
         }
 
-        //events
-        onClick();
+        function openDateModal(date) {
+            let dateModal = document.getElementById(`date-modal-${date}`);
+            if (!dateModal) {
+                dateModal = document.getElementById('dateModalTemplate').cloneNode(true);
+                dateModal.id = `date-modal-${date}`;
+                dateModal.getElementsByClassName('close')[0].onclick = () => { dateModal.style.display = 'none'; };
+                dateModal.querySelector('#date-title').textContent = date;
+                dateModal.querySelector('#date-title').dataset.date = date;
+                dateModal.querySelector('#date-task-list').id = `date-task-list-${date}`;
+                document.body.appendChild(dateModal);
+            }
+            renderTasksForDate(date);
+            dateModal.style.display = 'block';
+        }
 
-        //attach to global window object
-        global.dycalendar = dycalendar;
+        // Calendar functionality
+        const monthNames = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+        let currentMonth = new Date().getMonth();
+        let currentYear = new Date().getFullYear();
 
-    }(typeof window !== "undefined" ? window : this));
+        function renderCalendar(month, year) {
+            const daysContainer = document.getElementById('days');
+            daysContainer.innerHTML = '';
+            document.getElementById('monthYear').textContent = `${monthNames[month]} ${year}`;
 
+            const firstDay = new Date(year, month, 1).getDay();
+            const daysInMonth = 32 - new Date(year, month, 32).getDate();
+
+            for (let i = 0; i < firstDay; i++) {
+                const emptyDay = document.createElement('div');
+                emptyDay.classList.add('day');
+                daysContainer.appendChild(emptyDay);
+            }
+
+            for (let i = 1; i <= daysInMonth; i++) {
+                const day = document.createElement('div');
+                day.classList.add('day');
+                day.textContent = i;
+                day.addEventListener('click', () => openDateModal(`${year}-${month + 1}-${i}`));
+                daysContainer.appendChild(day);
+            }
+        }
+
+        function prevMonth() {
+            currentMonth = (currentMonth === 0) ? 11 : currentMonth - 1;
+            currentYear = (currentMonth === 11) ? currentYear - 1 : currentYear;
+            renderCalendar(currentMonth, currentYear);
+        }
+
+        function nextMonth() {
+            currentMonth = (currentMonth === 11) ? 0 : currentMonth + 1;
+            currentYear = (currentMonth === 0) ? currentYear + 1 : currentYear;
+            renderCalendar(currentMonth, currentYear);
+        }
+
+        renderCalendar(currentMonth, currentYear);
+        renderTasksForToday();
     </script>
 </body>
 </html>

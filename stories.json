@@ -1,0 +1,182 @@
+[
+    {
+        "name": "Jack",
+        "tragic_story": "Growing up, Jack always dreamed of becoming a musician. However, a tragic car accident left them paralyzed from the waist down. The road to recovery was long and painful, filled with countless hours of physical therapy. Though their dreams were shattered, Jack found new purpose in teaching music to others.",
+        "one_liner": "Growing up, Jack always dreamed of becoming a musician.",
+        "photo_link": "https://example.com/photo5.jpg"
+    },
+    {
+        "name": "Ivy",
+        "tragic_story": "In a small village, Ivy lost everything when a sudden fire razed their home to the ground. They had to rebuild their life from scratch, struggling to find shelter and food. Despite the hardship, Ivy found the strength to keep going, but the scars of that day never left them.",
+        "one_liner": "In a small village, Ivy lost everything when a sudden fire razed their home to the ground.",
+        "photo_link": "https://example.com/photo2.jpg"
+    },
+    {
+        "name": "Hank",
+        "tragic_story": "After losing their parents in a plane crash, Hank was left to fend for themselves at a young age. They moved from one foster home to another, each with its own set of challenges. Despite the odds, Hank persevered and eventually graduated with honors, a testament to their resilience.",
+        "one_liner": "After losing their parents in a plane crash, Hank was left to fend for themselves at a young age.",
+        "photo_link": "https://example.com/photo5.jpg"
+    },
+    {
+        "name": "Wendy",
+        "tragic_story": "Growing up, Wendy always dreamed of becoming a musician. However, a tragic car accident left them paralyzed from the waist down. The road to recovery was long and painful, filled with countless hours of physical therapy. Though their dreams were shattered, Wendy found new purpose in teaching music to others.",
+        "one_liner": "Growing up, Wendy always dreamed of becoming a musician.",
+        "photo_link": "https://example.com/photo1.jpg"
+    },
+    {
+        "name": "Bob",
+        "tragic_story": "In a small village, Bob lost everything when a sudden fire razed their home to the ground. They had to rebuild their life from scratch, struggling to find shelter and food. Despite the hardship, Bob found the strength to keep going, but the scars of that day never left them.",
+        "one_liner": "In a small village, Bob lost everything when a sudden fire razed their home to the ground.",
+        "photo_link": "https://example.com/photo2.jpg"
+    },
+    {
+        "name": "Eva",
+        "tragic_story": "In a small village, Eva lost everything when a sudden fire razed their home to the ground. They had to rebuild their life from scratch, struggling to find shelter and food. Despite the hardship, Eva found the strength to keep going, but the scars of that day never left them.",
+        "one_liner": "In a small village, Eva lost everything when a sudden fire razed their home to the ground.",
+        "photo_link": "https://example.com/photo5.jpg"
+    },
+    {
+        "name": "Victor",
+        "tragic_story": "In a small village, Victor lost everything when a sudden fire razed their home to the ground. They had to rebuild their life from scratch, struggling to find shelter and food. Despite the hardship, Victor found the strength to keep going, but the scars of that day never left them.",
+        "one_liner": "In a small village, Victor lost everything when a sudden fire razed their home to the ground.",
+        "photo_link": "https://example.com/photo5.jpg"
+    },
+    {
+        "name": "Sam",
+        "tragic_story": "After losing their parents in a plane crash, Sam was left to fend for themselves at a young age. They moved from one foster home to another, each with its own set of challenges. Despite the odds, Sam persevered and eventually graduated with honors, a testament to their resilience.",
+        "one_liner": "After losing their parents in a plane crash, Sam was left to fend for themselves at a young age.",
+        "photo_link": "https://example.com/photo5.jpg"
+    },
+    {
+        "name": "Leo",
+        "tragic_story": "In a small village, Leo lost everything when a sudden fire razed their home to the ground. They had to rebuild their life from scratch, struggling to find shelter and food. Despite the hardship, Leo found the strength to keep going, but the scars of that day never left them.",
+        "one_liner": "In a small village, Leo lost everything when a sudden fire razed their home to the ground.",
+        "photo_link": "https://example.com/photo4.jpg"
+    },
+    {
+        "name": "Yara",
+        "tragic_story": "Diagnosed with a rare illness, Yara spent most of their childhood in and out of hospitals. The treatments were grueling, and the prognosis was uncertain. Yet, Yara never gave up hope, and their unwavering spirit became an inspiration to everyone around them.",
+        "one_liner": "Diagnosed with a rare illness, Yara spent most of their childhood in and out of hospitals.",
+        "photo_link": "https://example.com/photo4.jpg"
+    },
+    {
+        "name": "Grace",
+        "tragic_story": "When a massive flood hit their town, Grace lost not only their home but also several family members. The devastation was unimaginable, and the recovery process was slow and painful. Grace dedicated themselves to helping rebuild the community, becoming a beacon of hope for others.",
+        "one_liner": "When a massive flood hit their town, Grace lost not only their home but also several family members.",
+        "photo_link": "https://example.com/photo5.jpg"
+    },
+    {
+        "name": "Wendy",
+        "tragic_story": "After losing their parents in a plane crash, Wendy was left to fend for themselves at a young age. They moved from one foster home to another, each with its own set of challenges. Despite the odds, Wendy persevered and eventually graduated with honors, a testament to their resilience.",
+        "one_liner": "After losing their parents in a plane crash, Wendy was left to fend for themselves at a young age.",
+        "photo_link": "https://example.com/photo5.jpg"
+    },
+    {
+        "name": "Yara",
+        "tragic_story": "When a massive flood hit their town, Yara lost not only their home but also several family members. The devastation was unimaginable, and the recovery process was slow and painful. Yara dedicated themselves to helping rebuild the community, becoming a beacon of hope for others.",
+        "one_liner": "When a massive flood hit their town, Yara lost not only their home but also several family members.",
+        "photo_link": "https://example.com/photo2.jpg"
+    },
+    {
+        "name": "Leo",
+        "tragic_story": "Growing up, Leo always dreamed of becoming a musician. However, a tragic car accident left them paralyzed from the waist down. The road to recovery was long and painful, filled with countless hours of physical therapy. Though their dreams were shattered, Leo found new purpose in teaching music to others.",
+        "one_liner": "Growing up, Leo always dreamed of becoming a musician.",
+        "photo_link": "https://example.com/photo4.jpg"
+    },
+    {
+        "name": "Tina",
+        "tragic_story": "Growing up, Tina always dreamed of becoming a musician. However, a tragic car accident left them paralyzed from the waist down. The road to recovery was long and painful, filled with countless hours of physical therapy. Though their dreams were shattered, Tina found new purpose in teaching music to others.",
+        "one_liner": "Growing up, Tina always dreamed of becoming a musician.",
+        "photo_link": "https://example.com/photo3.jpg"
+    },
+    {
+        "name": "Nina",
+        "tragic_story": "Growing up, Nina always dreamed of becoming a musician. However, a tragic car accident left them paralyzed from the waist down. The road to recovery was long and painful, filled with countless hours of physical therapy. Though their dreams were shattered, Nina found new purpose in teaching music to others.",
+        "one_liner": "Growing up, Nina always dreamed of becoming a musician.",
+        "photo_link": "https://example.com/photo5.jpg"
+    },
+    {
+        "name": "Bob",
+        "tragic_story": "When a massive flood hit their town, Bob lost not only their home but also several family members. The devastation was unimaginable, and the recovery process was slow and painful. Bob dedicated themselves to helping rebuild the community, becoming a beacon of hope for others.",
+        "one_liner": "When a massive flood hit their town, Bob lost not only their home but also several family members.",
+        "photo_link": "https://example.com/photo1.jpg"
+    },
+    {
+        "name": "Frank",
+        "tragic_story": "Growing up, Frank always dreamed of becoming a musician. However, a tragic car accident left them paralyzed from the waist down. The road to recovery was long and painful, filled with countless hours of physical therapy. Though their dreams were shattered, Frank found new purpose in teaching music to others.",
+        "one_liner": "Growing up, Frank always dreamed of becoming a musician.",
+        "photo_link": "https://example.com/photo2.jpg"
+    },
+    {
+        "name": "Hank",
+        "tragic_story": "After losing their parents in a plane crash, Hank was left to fend for themselves at a young age. They moved from one foster home to another, each with its own set of challenges. Despite the odds, Hank persevered and eventually graduated with honors, a testament to their resilience.",
+        "one_liner": "After losing their parents in a plane crash, Hank was left to fend for themselves at a young age.",
+        "photo_link": "https://example.com/photo3.jpg"
+    },
+    {
+        "name": "David",
+        "tragic_story": "Diagnosed with a rare illness, David spent most of their childhood in and out of hospitals. The treatments were grueling, and the prognosis was uncertain. Yet, David never gave up hope, and their unwavering spirit became an inspiration to everyone around them.",
+        "one_liner": "Diagnosed with a rare illness, David spent most of their childhood in and out of hospitals.",
+        "photo_link": "https://example.com/photo2.jpg"
+    },
+    {
+        "name": "Frank",
+        "tragic_story": "Diagnosed with a rare illness, Frank spent most of their childhood in and out of hospitals. The treatments were grueling, and the prognosis was uncertain. Yet, Frank never gave up hope, and their unwavering spirit became an inspiration to everyone around them.",
+        "one_liner": "Diagnosed with a rare illness, Frank spent most of their childhood in and out of hospitals.",
+        "photo_link": "https://example.com/photo2.jpg"
+    },
+    {
+        "name": "Grace",
+        "tragic_story": "Growing up, Grace always dreamed of becoming a musician. However, a tragic car accident left them paralyzed from the waist down. The road to recovery was long and painful, filled with countless hours of physical therapy. Though their dreams were shattered, Grace found new purpose in teaching music to others.",
+        "one_liner": "Growing up, Grace always dreamed of becoming a musician.",
+        "photo_link": "https://example.com/photo5.jpg"
+    },
+    {
+        "name": "Xander",
+        "tragic_story": "Diagnosed with a rare illness, Xander spent most of their childhood in and out of hospitals. The treatments were grueling, and the prognosis was uncertain. Yet, Xander never gave up hope, and their unwavering spirit became an inspiration to everyone around them.",
+        "one_liner": "Diagnosed with a rare illness, Xander spent most of their childhood in and out of hospitals.",
+        "photo_link": "https://example.com/photo2.jpg"
+    },
+    {
+        "name": "Bob",
+        "tragic_story": "In a small village, Bob lost everything when a sudden fire razed their home to the ground. They had to rebuild their life from scratch, struggling to find shelter and food. Despite the hardship, Bob found the strength to keep going, but the scars of that day never left them.",
+        "one_liner": "In a small village, Bob lost everything when a sudden fire razed their home to the ground.",
+        "photo_link": "https://example.com/photo4.jpg"
+    },
+    {
+        "name": "Jack",
+        "tragic_story": "Growing up, Jack always dreamed of becoming a musician. However, a tragic car accident left them paralyzed from the waist down. The road to recovery was long and painful, filled with countless hours of physical therapy. Though their dreams were shattered, Jack found new purpose in teaching music to others.",
+        "one_liner": "Growing up, Jack always dreamed of becoming a musician.",
+        "photo_link": "https://example.com/photo2.jpg"
+    },
+    {
+        "name": "Alice",
+        "tragic_story": "In a small village, Alice lost everything when a sudden fire razed their home to the ground. They had to rebuild their life from scratch, struggling to find shelter and food. Despite the hardship, Alice found the strength to keep going, but the scars of that day never left them.",
+        "one_liner": "In a small village, Alice lost everything when a sudden fire razed their home to the ground.",
+        "photo_link": "https://example.com/photo5.jpg"
+    },
+    {
+        "name": "Nina",
+        "tragic_story": "Growing up, Nina always dreamed of becoming a musician. However, a tragic car accident left them paralyzed from the waist down. The road to recovery was long and painful, filled with countless hours of physical therapy. Though their dreams were shattered, Nina found new purpose in teaching music to others.",
+        "one_liner": "Growing up, Nina always dreamed of becoming a musician.",
+        "photo_link": "https://example.com/photo5.jpg"
+    },
+    {
+        "name": "Sam",
+        "tragic_story": "Diagnosed with a rare illness, Sam spent most of their childhood in and out of hospitals. The treatments were grueling, and the prognosis was uncertain. Yet, Sam never gave up hope, and their unwavering spirit became an inspiration to everyone around them.",
+        "one_liner": "Diagnosed with a rare illness, Sam spent most of their childhood in and out of hospitals.",
+        "photo_link": "https://example.com/photo3.jpg"
+    },
+    {
+        "name": "Oscar",
+        "tragic_story": "In a small village, Oscar lost everything when a sudden fire razed their home to the ground. They had to rebuild their life from scratch, struggling to find shelter and food. Despite the hardship, Oscar found the strength to keep going, but the scars of that day never left them.",
+        "one_liner": "In a small village, Oscar lost everything when a sudden fire razed their home to the ground.",
+        "photo_link": "https://example.com/photo1.jpg"
+    },
+    {
+        "name": "Jack",
+        "tragic_story": "In a small village, Jack lost everything when a sudden fire razed their home to the ground. They had to rebuild their life from scratch, struggling to find shelter and food. Despite the hardship, Jack found the strength to keep going, but the scars of that day never left them.",
+        "one_liner": "In a small village, Jack lost everything when a sudden fire razed their home to the ground.",
+        "photo_link": "https://example.com/photo5.jpg"
+    }
+]
